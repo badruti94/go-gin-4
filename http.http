@@ -1,0 +1,26 @@
+GET http://localhost:8080/ HTTP/1.1
+
+### get fruits
+GET http://localhost:8080/fruits HTTP/1.1
+
+### get fruit by id
+GET http://localhost:8080/fruits/2 HTTP/1.1
+
+### create fruit
+POST http://localhost:8080/fruits HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Mango 2"
+}
+
+### update fruit
+PUT http://localhost:8080/fruits/6 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Mango update"
+}
+
+### dewlete fruit
+DELETE http://localhost:8080/fruits/6 HTTP/1.1
